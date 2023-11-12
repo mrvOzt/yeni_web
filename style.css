@@ -5,12 +5,23 @@ body {
     color: #333333; /* Metin rengi */
 }
 
-h1 {
-    color: #00a800; /* Başlık rengi */
-    font-size: 24px; /* Başlık yazı tipi boyutu */
-    font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+@keyframes color-change {
+  0% {
+    color: blue;
+  }
+
+  40% {
+    color: red;
+  }
+  70% {
+    color: gold;
+  }
+  100% {
+    color: blue;
+  }
 }
 
-h2 {
-    color: #eb34b4; /* Başlık rengi */
+h1:hover {
+  animation: color-change 3s infinite;
 }
+
